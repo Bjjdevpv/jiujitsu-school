@@ -5,6 +5,7 @@ html {
 
 body a {
     font-weight: bold;
+    text-decoration: none;
 }
 
 /*Header*/
@@ -236,6 +237,7 @@ footer {
     height: 375px;
     position: relative;
     display: block;
+    margin-left: 15px;
 }
 
 .form-background {
