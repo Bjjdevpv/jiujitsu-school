@@ -73,6 +73,7 @@ margin-bottom: 25px;
 
 .company-info-titlebox h2, .company-info-titlebox p {
     color: #222;
+    box-sizing: border-box;
 }
 
 .company-info-titlebox h2 {
@@ -166,11 +167,11 @@ margin-bottom: 25px;
 }
 
 #compete-title {
-    color: #3da5d9;
+    color: #2364aa;
 }
 
 #comercial-title {
-    color: #73bfb8;
+    color: #2364aa;
 }
 
 /*Sobre a empresa*/
@@ -220,7 +221,6 @@ footer {
     clear: both;
     max-width: 1200px;
     height: 500px;
-    padding: 30px 10%;
     position: relative;
 }
 
@@ -305,7 +305,83 @@ background-color: transparent;
     margin-right: auto;
 }
 
+@media (max-width:480px){
 
+    .banner {
+        width: 100%;
+        height: 600px;
+        background-position: cover;
+    }
+
+    .box-container {
+        max-width: 75%;
+        left: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .company-info-container {
+        height: 260px;
+    }
+
+    .company-info-titlebox p {
+        text-align: left;
+        max-width: 420px;
+    }
+
+    .services-container {
+        max-width: 450px;
+        height: 600px;
+        padding-top: 10px;
+    }
+
+    .services-container::before {
+        background-size: cover;
+        height: 700px;
+    }
+
+    .service-box {
+        width: 450px;
+        margin-left: -40px;
+        display: flex;
+    }
+
+    .service-description {
+        max-width: 450px;
+    }
+
+    .service-description h3 {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+
+    .service-description p {
+        margin-top: -13px;
+        line-height: 20px;
+        
+    }
+
+    #kids-box,#compete-box,#comercial-box {
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer-container {
+        max-width: 450px;
+        background-size: cover;
+    }
+
+    .form-container {
+        width: 90%;
+        position: absolute;
+        padding-top: 20px;
+    }
+
+    .form-container input, .form-container textarea {
+        width: 300px;
+    }
+
+}
 
 
 
