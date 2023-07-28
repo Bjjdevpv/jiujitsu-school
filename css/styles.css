@@ -343,8 +343,8 @@ background-color: transparent;
 
     .company-info-titlebox p {
         text-align: left;
-        max-width: 420px;
-        box-sizing: border-box;
+        width: 100vw;
+        padding-right: 40px;
     }
 
     .services-container {
@@ -369,7 +369,6 @@ background-color: transparent;
     .service-description {
         max-width: 450px;
     }
-
     .service-description h3 {
         font-size: 16px;
         margin-top: -30px;
@@ -378,6 +377,7 @@ background-color: transparent;
     .service-description p {
         margin-top: -13px;
         line-height: 20px;
+        margin-right: 15px;
         
     }
 
