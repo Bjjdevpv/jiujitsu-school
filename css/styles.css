@@ -3,6 +3,14 @@ html {
     font-family: helvetica, sans-serif;
 }
 
+body {
+    background-color: #aaa;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100vw;
+    height: 100vh;
+}
+
 body a {
     font-weight: bold;
     text-decoration: none;
@@ -19,7 +27,7 @@ body a {
 
 .box-container {
     width: 400px;
-    height: 200px;text-align: center;
+    height: 200px; text-align: center;
     position: absolute;
     left: 100px;
     bottom: 250px;
@@ -307,8 +315,11 @@ background-color: transparent;
 
 @media (max-width:480px){
 
+    body { overflow-x: hidden; 
+    }
+
     .banner {
-        width: 100%;
+        width: 100vw;
         height: 600px;
         background-position: cover;
     }
@@ -322,17 +333,25 @@ background-color: transparent;
 
     .company-info-container {
         height: 260px;
+        position: relative;
+        display: flex;
+    }
+
+    .company-info-background {
+        position: relative;
     }
 
     .company-info-titlebox p {
         text-align: left;
         max-width: 420px;
+        box-sizing: border-box;
     }
 
     .services-container {
         max-width: 450px;
         height: 600px;
         padding-top: 10px;
+        
     }
 
     .services-container::before {
@@ -344,6 +363,7 @@ background-color: transparent;
         width: 450px;
         margin-left: -40px;
         display: flex;
+        justify-content: space-around;
     }
 
     .service-description {
@@ -367,7 +387,7 @@ background-color: transparent;
     }
 
     .footer-container {
-        max-width: 450px;
+        max-width: 100vw;
         background-size: cover;
     }
 
@@ -379,6 +399,7 @@ background-color: transparent;
 
     .form-container input, .form-container textarea {
         width: 300px;
+        position: relative;
     }
 
 }
